@@ -1,3 +1,5 @@
+<img src="http://uniproject.vazco.eu/black_logo.png" />
+
 # Universe Collection Links
 This package can help you with binding routes with collection and its document.
 It works for FlowRouter ( but It can works with Iron Router too. - Not tested for Iron Router yet)

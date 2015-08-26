@@ -14,7 +14,7 @@ Package.onUse(function (api) {
     api.versionsFrom('1.1.0.3');
     api.use([
         'universe:utilities@1.0.0',
-        'vazco:universe-collection'
+        'vazco:universe-collection@1.8.8'
     ]);
 
     api.use(['kadira:flow-router@2.3.0', 'iron:router@1.0.9'], {weak: true});

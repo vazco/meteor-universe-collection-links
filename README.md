@@ -32,6 +32,8 @@ Books.setCollectionRoute('/short_page/:_id', {
 ```
 ## Getting path
 
+`.getLink('routeName', params, queryParams)` returns link for route
+
 ```js
 var doc = Books.findOne();
 //default route for document is fullview (parameter(s) of route must be the same as key(s) of document)

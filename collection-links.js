@@ -1,28 +1,31 @@
 // Docs links
-var Router = UniUtils.get(Package, 'kadira:flow-router.FlowRouter');
-if (!Router) { //If no flow router, try get iron router
-    Router = UniUtils.get(Package, 'iron:router.Router');
-}
+var Router = (
+    UniUtils.get(Package, 'kadira:flow-router.FlowRouter') ||
+    UniUtils.get(Package, 'iron:router.Router')
+);
+
+var defaultCollectionPath    = 'Listing';
+var defaultCollectionDocPath = 'Fullview';
 
 UniCollection.prototype.setCollectionRoute = function (path, definition) {
-    definition.name = _normalizeName.call(this, definition.name, 'Listing');
-    FlowRouter.route(path, definition);
+    definition.name = _normalizeName.call(this, definition.name, defaultCollectionPath);
+    Router.route(path, definition);
 };
 
 UniCollection.UniDoc.prototype.getLink = function (name, queryParams) {
-    return FlowRouter.path(_normalizeName.call(this, name, 'Fullview'), this, queryParams);
+    return Router.path(_normalizeName.call(this, name, defaultCollectionDocPath), this, queryParams);
 };
 
 UniCollection.UniDoc.prototype.goToLink = function (name, queryParams) {
-    return FlowRouter.go(_normalizeName.call(this, name, 'Fullview'), this, queryParams);
+    return Router.go(_normalizeName.call(this, name, defaultCollectionDocPath), this, queryParams);
 };
 
 UniCollection.prototype.getLink = function (name, params, queryParams) {
-    return FlowRouter.path(_normalizeName.call(this, name, 'Listing'), params, queryParams);
+    return Router.path(_normalizeName.call(this, name, defaultCollectionPath), params, queryParams);
 };
 
 UniCollection.prototype.goToLink = function (name, params, queryParams) {
-    return FlowRouter.go(_normalizeName.call(this, name, '', 'Listing'), params, queryParams);
+    return Router.go(_normalizeName.call(this, name, defaultCollectionPath), params, queryParams);
 };
 
 

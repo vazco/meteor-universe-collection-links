@@ -1,6 +1,6 @@
 Package.describe({
     name: 'universe:collection-links',
-    version: '0.5.1',
+    version: '0.5.2',
     // Brief, one-line summary of the package.
     summary: 'Adds routes to universe collection and get link to pages directly from document or collection',
     // URL to the Git repository containing the source code for this package.
@@ -13,7 +13,7 @@ Package.describe({
 Package.onUse(function (api) {
     api.versionsFrom('1.1.0.3');
     api.use([
-        'universe:utilities@1.0.0',
+        'universe:utilities@2.0.4',
         'vazco:universe-collection@1.8.8'
     ]);
 

@@ -1,4 +1,4 @@
-<img src="http://uniproject.vazco.eu/black_logo.png" />
+<a href="http://unicms.io"><img src="http://unicms.io/banners/standalone.png" /></a>
 
 # Universe Collection Links
 This package can help you with binding routes with collection and its document.

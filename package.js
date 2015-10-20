@@ -17,7 +17,7 @@ Package.onUse(function (api) {
         'universe:collection@2.0.0'
     ]);
 
-    api.use(['kadira:flow-router@2.7.0', 'iron:router@1.0.9'], {weak: true});
+    api.use(['kadira:flow-router@2.7.0', 'iron:router@1.0.12'], {weak: true});
 
     api.addFiles('collection-links.js');
 });

@@ -1,6 +1,6 @@
 Package.describe({
     name: 'universe:collection-links',
-    version: '0.6.0',
+    version: '0.6.3',
     // Brief, one-line summary of the package.
     summary: 'Adds routes to universe collection and get link to pages directly from document or collection',
     // URL to the Git repository containing the source code for this package.
@@ -11,10 +11,10 @@ Package.describe({
 });
 
 Package.onUse(function (api) {
-    api.versionsFrom('1.1.0.3');
+    api.versionsFrom('1.3');
     api.use([
-        'universe:utilities@2.0.7',
-        'universe:collection@2.0.0'
+        'universe:utilities@2.3.2',
+        'universe:collection@2.3.4'
     ]);
 
     api.use(['kadira:flow-router@2.7.0', 'iron:router@1.0.12'], {weak: true});

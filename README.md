@@ -1,4 +1,4 @@
-<a href="http://unicms.io"><img src="http://unicms.io/banners/standalone.png" /></a>
+## Abandonware
 
 # Universe Collection Links
 This package can help you with binding routes with collection and its document.

@@ -1,8 +1,17 @@
-## Abandonware
+<h1 align="center">
+    <a href="https://github.com/vazco">vazco</a>/Universe Collection Links
+</h1>
 
-# Universe Collection Links
+&nbsp;
+
+<h3 align="center">
+  -- Abandonware. This package is deprecated! --
+</h3>
+
+&nbsp;
+
 This package can help you with binding routes with collection and its document.
-It works for FlowRouter ( but It can works with Iron Router too. - Not tested for Iron Router yet)
+It works for FlowRouter ( but It can works with Iron Router too. - Not tested for Iron Router)
 
 ## Creating routes
 ```js
@@ -57,3 +66,9 @@ Books.getLink('fullview', {_id: 'ac9b43533dd'}); //output: '/book/ac9b43533dd'
 ## Navigate to path
 
 Use `.goToLink()` instead `.getLink()` to change current route.
+
+## License
+
+<img src="https://vazco.eu/banner.png" align="right">
+
+**Like every package maintained by [Vazco](https://vazco.eu/), Universe Collection Links is [MIT licensed](https://github.com/vazco/uniforms/blob/master/LICENSE).**
